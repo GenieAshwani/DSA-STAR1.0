@@ -51,17 +51,17 @@ public class OrderBT {
     {
         if(root==null) return;
 
-        preOrder(root.left);
-        preOrder(root.right);
+        postOrder(root.left);
+        postOrder(root.right);
         System.out.print(root.data+", ");
     }
     public static void inOrder(Tree root)
     {
         if(root==null) return;
 
-        preOrder(root.left);
+        inOrder(root.left);
         System.out.print(root.data+", ");
-        preOrder(root.right);
+        inOrder(root.right);
 
     }
 
